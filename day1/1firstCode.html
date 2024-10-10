@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body style="background-color: #232323; color: gold;" > 
+    <div id="root"></div>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone@7.8.3/babel.js"></script>
+    <script type="text/babel">
+        const root = ReactDOM.createRoot(document.getElementById("root"));
+        // write you code here -------->
+
+        // create a React component called App
+        // App should return JSX
+        // Invoke App inside of root.render()
+        function App() {
+            let subject = "Maths"
+            return <h1 className="page-title blue">I love {subject} </h1>
+        }
+
+        root.render(<App />);
+
+        // your code ends here <--------
+    </script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
