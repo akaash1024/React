@@ -2,6 +2,12 @@
 // Instead of writing JSX inside root.render() directly we are returning it from a function called App().
 
 // Make the hardcoded data dynamic using interpolation.
+
+// run below file in codepen JS complier only..
+
+// adding more example from out sourcee..
+
+
 function App() {
   let mathsScore = 50;
   let scinceScore = 70;
@@ -15,7 +21,6 @@ function App() {
     return "fail"
   }
   
-
   let style = { color : "pink", backgroundColor: "gold"}
 
   return (
