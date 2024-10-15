@@ -1,0 +1,44 @@
+<!-- If you have noticed, in all of my examples, react components return a single element and that single element may have multiple children. -->
+
+
+
+
+<html>
+
+<body>
+    <div id="root"></div>
+</body>
+
+<script>
+    function App() {
+        return (
+            <>
+                <div>first parent</div>
+                <div>second parent</div>
+            </>
+        );
+
+        return (
+            <div>
+                <h1> Greetings!</h1>
+                <p> I am Vivek 👋 </p>
+                <div>first parent</div>
+                <div>second parent</div>
+            </div>
+        );
+
+        return (
+            <Fragment>
+                <div>first parent</div>
+                <div>second parent</div>
+            </Fragment>
+        );
+    }
+
+    const root = createRoot(document.getElementById("root"));
+    root.render(<App />);
+
+
+</script>
+
+</html>

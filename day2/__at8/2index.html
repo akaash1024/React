@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="root"></div>
+</body>
+
+<script>
+    function TaskComponent({ type, id, checked, taskName }) {
+        return (
+            <div className="task">
+                <input type={type} id={id} checked={checked} />
+                <label htmlFor="task1">{taskName}</label>
+            </div>
+        )
+    }
+
+
+    function App() {
+        return (
+            <div className="task-list">
+
+                <TaskComponent
+                    type="checkbox"
+                    id="task1"
+                    checked={false}
+                    taskName="task1"
+                />
+
+                <hr />
+                <div className="task">
+                    <input type="checkbox" id="task1" checked={false} />
+                    <label htmlFor="task1">task1</label>
+                </div>
+
+                <div className="task">
+                    <input type="checkbox" id="task2" checked={true} />
+                    <label htmlFor="task2">task2</label>
+                </div>
+
+                <div className="task">
+                    <input type="checkbox" id="task3" checked={false} />
+                    <label htmlFor="task3">task3</label>
+                </div>
+            </div>
+        );
+    }
+
+    const root = createRoot(document.getElementById("root"));
+    root.render(<App />);
+
+</script>
+
+</html>
