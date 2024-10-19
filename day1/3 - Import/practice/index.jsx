@@ -1,5 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client"; // Update import to react-dom/client
+
 import { add, multiply, subtract, divide } from "./calculator.jsx";
 import * as cal from "./calculator.jsx";
 
